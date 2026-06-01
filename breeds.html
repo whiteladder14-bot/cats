@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Популярні породи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Головна</a> | 
+        <a href="breeds.html">Породи</a> | 
+        <a href="interactive.html">Інтерактив</a>
+    </nav>
+    <main>
+        <h2>Топ-3 популярні породи</h2>
+        <div class="card" onclick="toggleImage('img-mainecoon')">
+    <h3>Мейн-кун 🐾</h3>
+    <p>Найбільша домашня кішка з неймовірним характером.</p>
+    <img id="img-mainecoon" src="https://zoo-expert.com.ua/image/catalog/maine%20coon.png" w=600" class="cat-img" style="display:none;">
+</div>
+
+<div class="card" onclick="toggleImage('img-siamese')">
+    <h3>Сіамська 🐾</h3>
+    <p>Граціозна та дуже говірка порода.</p>
+    <img id="img-siamese" src="https://www.purina.ua/sites/default/files/styles/ttt_image_510/public/2024-01/sitesdefaultfilesstylessquare_medium_440x440public2022-06Siamese201.jpg?itok=pubYBc3t" w=300" class="cat-img" style="display:none;">
+</div>
+
+<div class="card" onclick="toggleImage('img-britan')">
+    <h3>Британська короткошерста 🐾</h3>
+    <p>Справжній "плюшевий" ведмедик серед котів.</p>
+    <img id="img-britan" src="https://static.wixstatic.com/media/10e2ba_7a2032ea9aea4af6a9659769fdea020c~mv2.jpg/v1/fill/w_568,h_362,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/10e2ba_7a2032ea9aea4af6a9659769fdea020c~mv2.jpg" w=300" class="cat-img" style="display:none;">
+</div>
+    </main>
+<script>
+function toggleImage(id) {
+    var img = document.getElementById(id);
+    if (img.style.display === "none") {
+        img.style.display = "block";
+    } else {
+        img.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

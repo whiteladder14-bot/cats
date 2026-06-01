@@ -1,0 +1,68 @@
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #fdf5e6;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm5 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-10 0c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm5 10c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5z' fill='%23eecfad' fill-opacity='0.4'/%3E%3C/svg%3E");
+   text-align: center;
+}
+nav {
+   background: #333;
+   padding: 15px;
+}
+nav a {
+   color: white;
+   text-decoration: none; 
+   margin: 0 10px;
+}
+.card {
+   border: 2px solid #333;
+   margin: 10px auto;
+   width: 60%; padding: 15px;
+   border-radius: 10px;
+   transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    background-color: #e0f0ff;
+}
+.cat-button {
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px 50px 20px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px #cc7a52;
+    transition: all 0.2s;
+    position: relative;
+}
+.cat-button:hover {
+    background-color: #ffad85;
+    transform: translateY(-2px);
+}
+.cat-button:active {
+    box-shadow: 0 2px #cc7a52;
+    transform: translateY(2px);
+}
+.cat-button::before, .cat-button::after {
+    content: '▲';
+    position: absolute;
+    top: -12px;
+    color: #ff9966;
+    font-size: 20px;
+}
+.cat-button::before { left: 10px; }
+.cat-button::after { right: 10px; }
+
+.cat-img {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+    border-radius: 15px;
+    animation: popIn 0.5s ease;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
